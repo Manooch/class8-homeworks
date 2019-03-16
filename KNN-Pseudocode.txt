@@ -1,0 +1,11 @@
+1. Load breast_cancer from sklearn.datasets (dataset)
+2. Convert dataset to pandas dataframe (df)
+3. Set the dataset.data and dataset.target into x &  y
+5. Load the training and test data by calling model_selection.train_test_split(X, y, test_size = 0.2, random_state = 0) and setthe outputs to X_train, X_test, y_train, y_test
+6. Choose the value of K
+7. Call KNeighborsClassifie(K = 1).fit(X_train, y_train)
+8. Call predict with X-test (y_pred)
+9. Print metrics.confusion_matrix(y_test, y_pred)
+10. Print metrics.classification_report(y_test, y_pred)
+11. Print metrics.f1_score(y_test, y_pred, average = "macro")
+12. Print clf.score(X_test, y_test) (this is the accuracy of the prediction)
